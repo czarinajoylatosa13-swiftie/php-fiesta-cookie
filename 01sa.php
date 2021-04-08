@@ -1,4 +1,6 @@
 <?php
+include '02sa.php';
+
 	$swiftie = array(
 		array(1,'Bulbasaur','Grass','Poison','Overgrow',45,49,49),
 		array(2,'Ivysaur','Grass','Poison','Overgrow',60,62,63),
@@ -16,12 +18,16 @@
 	echo "<br><br>";
 	echo count ($swiftie);
 	echo "<br><br>";
-	
 	$favorite = $swiftie[5][1];
 	
-	foreach($swiftie as $swiftie){
-		echo $swiftie[1];
+	foreach($swiftie as $swifties){
+		echo $swifties[1];
 		echo '<br>';
 	}
-
+	echo "<br>";
+	echo "Total of HP: ";
+	echo hp_sum($swiftie);
+	echo "<br>";
+	echo "Attack Average: ";
+	echo ave_attack($swiftie);
 ?>
