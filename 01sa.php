@@ -1,5 +1,6 @@
 <?php
 include '02sa.php';
+include '03sa.php';
 
 	$swiftie = array(
 		array(1,'Bulbasaur','Grass','Poison','Overgrow',45,49,49),
@@ -30,4 +31,9 @@ include '02sa.php';
 	echo "<br>";
 	echo "Attack Average: ";
 	echo ave_attack($swiftie);
+	echo "<br><br>";
+	echo pokemon_defense($swiftie, 50);
+	
+	
+	
 ?>
